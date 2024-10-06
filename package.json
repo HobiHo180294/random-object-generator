@@ -1,0 +1,53 @@
+{
+  "name": "random-object-generator",
+  "version": "1.0.0",
+  "description": "A Node.js project that generates random objects based on a specified JSON schema.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "lint": "eslint --fix",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,mjs}\"",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.{js,mjs}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HobiHo180294/random-object-generator.git"
+  },
+  "keywords": [
+    "Node.js",
+    "JSON Schema",
+    "Random Object Generator",
+    "Data Mocking",
+    "Test Data Generation",
+    "Schema-Based Generation",
+    "Object Creation",
+    "Data Modelling",
+    "Mock Data",
+    "Dynamic Object Generation",
+    "Schema Validation",
+    "Automated Testing",
+    "JavaScript"
+  ],
+  "author": "Yehor Potebenko <hitechnic.uu68@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HobiHo180294/random-object-generator/issues"
+  },
+  "homepage": "https://github.com/HobiHo180294/random-object-generator#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.10.0",
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.7"
+  }
+}
