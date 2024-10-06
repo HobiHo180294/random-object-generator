@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "A Node.js project that generates random objects based on a specified JSON schema.",
   "private": true,
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "watch": "nodemon index.js",
+    "start": "node .",
+    "watch": "nodemon .",
     "lint": "eslint --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,mjs}\"",
     "prepare": "husky"
