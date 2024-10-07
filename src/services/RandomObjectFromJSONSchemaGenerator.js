@@ -127,11 +127,14 @@ class RandomObjectFromJSONSchemaGenerator {
       switch (schema.type) {
         case 'string':
           if (schema?.pattern) {
-            this.#_urlRandomizer.generateURLFromRegExp(schema.pattern);
+            return this.#_urlRandomizer.generateURLFromRegExp(schema.pattern);
           }
           return this.#_urlRandomizer.generateString();
         case 'integer':
-          return this.#_numericRandomizer.generateInteger();
+          return this.#_numericRandomizer.generateInteger(
+            schema?.minimum,
+            schema?.maximum
+          );
         case 'number':
           return this.#_numericRandomizer.generateNumber();
         case 'boolean':
